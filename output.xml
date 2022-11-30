@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221130 03:23:14.237" rpa="false" schemaversion="3">
-<suite id="s1" name="Travailpratique Testcases" source="e:\robotframeworkPOM\testcases\travailpratique_testcases.robot">
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221130 16:53:09.564" rpa="false" schemaversion="3">
+<suite id="s1" name="TravailPratique Testcases" source="e:\robotframeworkPOM\testcases\TravailPratique_Testcases.robot">
 <test id="s1-t1" name="CT1:Positive Login Test" line="14">
 <kw name="Ouvrir le navigateur" library="TravailPratiqueKeyword">
 <arg>${Url}</arg>
@@ -9,10 +9,10 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221130 03:23:14.536" level="INFO">Opening browser 'gc' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
-<status status="PASS" starttime="20221130 03:23:14.536" endtime="20221130 03:23:16.799"/>
+<msg timestamp="20221130 16:53:09.876" level="INFO">Opening browser 'gc' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<status status="PASS" starttime="20221130 16:53:09.876" endtime="20221130 16:53:12.388"/>
 </kw>
-<status status="PASS" starttime="20221130 03:23:14.536" endtime="20221130 03:23:16.800"/>
+<status status="PASS" starttime="20221130 16:53:09.876" endtime="20221130 16:53:12.388"/>
 </kw>
 <kw name="Saisir un nom d'utilisateur valide" library="TravailPratiqueKeyword">
 <arg>${vld_username}</arg>
@@ -20,10 +20,10 @@
 <arg>${txt_username}</arg>
 <arg>${vld_username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221130 03:23:16.803" level="INFO">Typing text 'student' into text field '//input[@id='username']'.</msg>
-<status status="PASS" starttime="20221130 03:23:16.803" endtime="20221130 03:23:16.961"/>
+<msg timestamp="20221130 16:53:12.394" level="INFO">Typing text 'student' into text field '//input[@id='username']'.</msg>
+<status status="PASS" starttime="20221130 16:53:12.388" endtime="20221130 16:53:12.568"/>
 </kw>
-<status status="PASS" starttime="20221130 03:23:16.801" endtime="20221130 03:23:16.961"/>
+<status status="PASS" starttime="20221130 16:53:12.388" endtime="20221130 16:53:12.568"/>
 </kw>
 <kw name="Saisir un mot de passe valide" library="TravailPratiqueKeyword">
 <arg>${$pswrd}</arg>
@@ -31,216 +31,82 @@
 <arg>${txt_password}</arg>
 <arg>${pswrd}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221130 03:23:16.968" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20221130 03:23:17.053" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221130 03:23:17.134" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221130 03:23:16.967" endtime="20221130 03:23:17.134"/>
+<msg timestamp="20221130 16:53:12.568" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20221130 16:53:12.663" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221130 16:53:12.753" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221130 16:53:12.568" endtime="20221130 16:53:12.753"/>
 </kw>
-<status status="PASS" starttime="20221130 03:23:16.965" endtime="20221130 03:23:17.134"/>
+<status status="PASS" starttime="20221130 16:53:12.568" endtime="20221130 16:53:12.753"/>
 </kw>
 <kw name="Cliquer le bouton Submit" library="TravailPratiqueKeyword">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${submit_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221130 03:23:17.134" level="INFO">Clicking button '//button[text()='Submit']'.</msg>
-<status status="PASS" starttime="20221130 03:23:17.134" endtime="20221130 03:23:18.072"/>
+<msg timestamp="20221130 16:53:12.753" level="INFO">Clicking button '//button[text()='Submit']'.</msg>
+<status status="PASS" starttime="20221130 16:53:12.753" endtime="20221130 16:53:13.582"/>
 </kw>
-<status status="PASS" starttime="20221130 03:23:17.134" endtime="20221130 03:23:18.072"/>
+<status status="PASS" starttime="20221130 16:53:12.753" endtime="20221130 16:53:13.582"/>
 </kw>
 <kw name="Valider l'URL de la nouvelle page" library="TravailPratiqueKeyword">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <var>${url1}</var>
 <arg>return window.location.href;</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20221130 03:23:18.072" level="INFO">Executing JavaScript:
+<msg timestamp="20221130 16:53:13.591" level="INFO">Executing JavaScript:
 return window.location.href;
 Without any arguments.</msg>
-<msg timestamp="20221130 03:23:18.084" level="INFO">${url1} = https://practicetestautomation.com/logged-in-successfully/</msg>
-<status status="PASS" starttime="20221130 03:23:18.072" endtime="20221130 03:23:18.084"/>
+<msg timestamp="20221130 16:53:13.602" level="INFO">${url1} = https://practicetestautomation.com/logged-in-successfully/</msg>
+<status status="PASS" starttime="20221130 16:53:13.590" endtime="20221130 16:53:13.602"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${url1}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221130 03:23:18.089" endtime="20221130 03:23:18.089"/>
+<status status="PASS" starttime="20221130 16:53:13.602" endtime="20221130 16:53:13.602"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>practicetestautomation.com/logged-in-successfully/</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221130 03:23:18.117" level="INFO">Current page contains text 'practicetestautomation.com/logged-in-successfully/'.</msg>
-<status status="PASS" starttime="20221130 03:23:18.089" endtime="20221130 03:23:18.117"/>
+<msg timestamp="20221130 16:53:13.631" level="INFO">Current page contains text 'practicetestautomation.com/logged-in-successfully/'.</msg>
+<status status="PASS" starttime="20221130 16:53:13.602" endtime="20221130 16:53:13.631"/>
 </kw>
-<status status="PASS" starttime="20221130 03:23:18.072" endtime="20221130 03:23:18.117"/>
+<status status="PASS" starttime="20221130 16:53:13.582" endtime="20221130 16:53:13.639"/>
 </kw>
 <kw name="Vérifier que la page contient le text &quot;Congratulations&quot;" library="TravailPratiqueKeyword">
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Congratulations</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20221130 03:23:18.152" level="INFO">Current page contains text 'Congratulations'.</msg>
-<status status="PASS" starttime="20221130 03:23:18.125" endtime="20221130 03:23:18.152"/>
+<msg timestamp="20221130 16:53:13.669" level="INFO">Current page contains text 'Congratulations'.</msg>
+<status status="PASS" starttime="20221130 16:53:13.639" endtime="20221130 16:53:13.669"/>
 </kw>
-<status status="PASS" starttime="20221130 03:23:18.125" endtime="20221130 03:23:18.152"/>
+<status status="PASS" starttime="20221130 16:53:13.639" endtime="20221130 16:53:13.669"/>
 </kw>
 <kw name="Vérifier que le boutton Log out est affiché" library="TravailPratiqueKeyword">
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221130 03:23:20.164" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221130 03:23:18.160" endtime="20221130 03:23:20.164"/>
+<msg timestamp="20221130 16:53:15.669" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221130 16:53:13.669" endtime="20221130 16:53:15.670"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${button_logout}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221130 03:23:20.182" level="INFO">Current page contains element '//a[text()='Log out']'.</msg>
-<status status="PASS" starttime="20221130 03:23:20.164" endtime="20221130 03:23:20.182"/>
+<msg timestamp="20221130 16:53:15.683" level="INFO">Current page contains element '//a[text()='Log out']'.</msg>
+<status status="PASS" starttime="20221130 16:53:15.670" endtime="20221130 16:53:15.683"/>
 </kw>
-<status status="PASS" starttime="20221130 03:23:18.160" endtime="20221130 03:23:20.182"/>
+<status status="PASS" starttime="20221130 16:53:13.669" endtime="20221130 16:53:15.684"/>
 </kw>
-<status status="PASS" starttime="20221130 03:23:14.535" endtime="20221130 03:23:20.182"/>
+<status status="PASS" starttime="20221130 16:53:09.876" endtime="20221130 16:53:15.684"/>
 </test>
-<test id="s1-t2" name="CT2:Negative username test" line="25">
-<kw name="Ouvrir le navigateur" library="TravailPratiqueKeyword">
-<arg>${Url}</arg>
-<arg>${navigateur}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221130 03:23:20.191" level="INFO">Opening browser 'gc' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
-<status status="PASS" starttime="20221130 03:23:20.191" endtime="20221130 03:23:22.439"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:20.190" endtime="20221130 03:23:22.439"/>
-</kw>
-<kw name="Saisir un nom d'utilisateur invalide" library="TravailPratiqueKeyword">
-<arg>${invld_username}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${invld_username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221130 03:23:22.447" level="INFO">Typing text 'incorrectUser' into text field 'password'.</msg>
-<status status="PASS" starttime="20221130 03:23:22.446" endtime="20221130 03:23:22.575"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:22.445" endtime="20221130 03:23:22.575"/>
-</kw>
-<kw name="Saisir un mot de passe valide" library="TravailPratiqueKeyword">
-<arg>${$pswrd}</arg>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${pswrd}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221130 03:23:22.580" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20221130 03:23:22.630" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221130 03:23:22.689" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221130 03:23:22.580" endtime="20221130 03:23:22.689"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:22.580" endtime="20221130 03:23:22.689"/>
-</kw>
-<kw name="Cliquer le bouton Submit" library="TravailPratiqueKeyword">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221130 03:23:22.690" level="INFO">Clicking button '//button[text()='Submit']'.</msg>
-<status status="PASS" starttime="20221130 03:23:22.690" endtime="20221130 03:23:22.797"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:22.690" endtime="20221130 03:23:22.797"/>
-</kw>
-<kw name="Vérifier l'affichage du message d'erreur (Your username is invalid!)" library="TravailPratiqueKeyword">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${username_error_msg}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221130 03:23:22.827" level="INFO">Current page contains element '//div[text()='Your username is invalid!']'.</msg>
-<status status="PASS" starttime="20221130 03:23:22.800" endtime="20221130 03:23:22.829"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:22.797" endtime="20221130 03:23:22.830"/>
-</kw>
-<kw name="Vérifier que le text du message est &quot;Your username is invalid!&quot;" library="TravailPratiqueKeyword">
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>${username_error_msg}</arg>
-<arg>Your username is invalid!</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221130 03:23:22.882" level="INFO">Element '//div[text()='Your username is invalid!']' contains text 'Your username is invalid!'.</msg>
-<status status="PASS" starttime="20221130 03:23:22.834" endtime="20221130 03:23:22.883"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:22.832" endtime="20221130 03:23:22.883"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:20.182" endtime="20221130 03:23:22.883"/>
-</test>
-<test id="s1-t3" name="CT3:Negative password test" line="36">
-<kw name="Ouvrir le navigateur" library="TravailPratiqueKeyword">
-<arg>${Url}</arg>
-<arg>${navigateur}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221130 03:23:22.886" level="INFO">Opening browser 'gc' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
-<status status="PASS" starttime="20221130 03:23:22.886" endtime="20221130 03:23:25.109"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:22.886" endtime="20221130 03:23:25.110"/>
-</kw>
-<kw name="Saisir un nom d'utilisateur valide" library="TravailPratiqueKeyword">
-<arg>${vld_username}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${txt_username}</arg>
-<arg>${vld_username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221130 03:23:25.110" level="INFO">Typing text 'student' into text field '//input[@id='username']'.</msg>
-<status status="PASS" starttime="20221130 03:23:25.110" endtime="20221130 03:23:25.270"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:25.110" endtime="20221130 03:23:25.270"/>
-</kw>
-<kw name="Saisir un mot de passe incorrect" library="TravailPratiqueKeyword">
-<arg>${invpsswrd}</arg>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>${txt_password}</arg>
-<arg>${invpsswrd}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221130 03:23:25.278" level="INFO">Typing password into text field 'password'.</msg>
-<msg timestamp="20221130 03:23:25.379" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221130 03:23:25.465" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221130 03:23:25.277" endtime="20221130 03:23:25.465"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:25.276" endtime="20221130 03:23:25.465"/>
-</kw>
-<kw name="Cliquer le bouton Submit" library="TravailPratiqueKeyword">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${submit_button}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221130 03:23:25.465" level="INFO">Clicking button '//button[text()='Submit']'.</msg>
-<status status="PASS" starttime="20221130 03:23:25.465" endtime="20221130 03:23:25.568"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:25.465" endtime="20221130 03:23:25.568"/>
-</kw>
-<kw name="Vérifier l'affichage du message d'erreur (Your password is invalid!)" library="TravailPratiqueKeyword">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>${psswrd_error_msg}</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221130 03:23:25.585" level="INFO">Current page contains element '//div[text()='Your password is invalid!']'.</msg>
-<status status="PASS" starttime="20221130 03:23:25.571" endtime="20221130 03:23:25.585"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:25.568" endtime="20221130 03:23:25.585"/>
-</kw>
-<kw name="Vérifier que le text du message d'erreur est &quot;Your password is invalid!&quot;" library="TravailPratiqueKeyword">
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>${psswrd_error_msg}</arg>
-<arg>Your password is invalid!</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221130 03:23:25.632" level="INFO">Element '//div[text()='Your password is invalid!']' contains text 'Your password is invalid!'.</msg>
-<status status="PASS" starttime="20221130 03:23:25.592" endtime="20221130 03:23:25.632"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:25.591" endtime="20221130 03:23:25.633"/>
-</kw>
-<status status="PASS" starttime="20221130 03:23:22.886" endtime="20221130 03:23:25.634"/>
-</test>
-<status status="PASS" starttime="20221130 03:23:14.242" endtime="20221130 03:23:25.637"/>
+<status status="PASS" starttime="20221130 16:53:09.576" endtime="20221130 16:53:15.686"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Travailpratique Testcases">Travailpratique Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TravailPratique Testcases">TravailPratique Testcases</stat>
 </suite>
 </statistics>
 <errors>
